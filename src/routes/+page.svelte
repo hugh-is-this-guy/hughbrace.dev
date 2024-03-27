@@ -57,14 +57,37 @@
             <enhanced:img
               src={image}
               alt="Me"
-              class="mx-auto rounded-md w-2/3 md:w-4/5 lg:w-full md:w-full absolute left-1/2 top-1/2 hidden sm:block"
+              class="
+                hidden
+                sm:block
+                mx-auto
+                rounded-md
+                w-2/3
+                md:w-4/5
+                lg:w-full
+                md:w-full
+                absolute
+                left-1/2
+                top-1/2
+                "
               style="transform: translate(-50%, -50%) rotate({randomRotation()}deg);"
             />
 
             <enhanced:img
               src={imagesSm[i]}
               alt="Me"
-              class="mx-auto rounded-md w-2/3 md:w-4/5 lg:w-full md:w-full absolute left-1/2 top-1/2 sm:hidden"
+              class="
+                sm:hidden
+                mx-auto
+                rounded-md
+                w-2/3
+                md:w-4/5
+                lg:w-full
+                md:w-full
+                absolute
+                left-1/2
+                top-1/2
+                "
               style="transform: translate(-50%, -50%) rotate({randomRotation()}deg);"
             />
           </div>
