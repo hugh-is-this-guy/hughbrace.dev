@@ -26,19 +26,25 @@
     activeImage = (activeImage + 1) % images.length;
   }, 3000);
 
+  function randomRotation() {
+    return Math.floor(Math.random() * 24) - 12;
+  }
+
 </script>
 
-<div class="container">
+<div class="container pb-12">
   <div class="flex flex-col md:grid md:grid-cols-3 items-center justify-center gap-8 md:gap-12 pt-12 md:mb-12">
-    <div class="flex flex-col items-center md:order-2">
+    <div class="flex flex-col items-center md:order-2 w-full aspect-video md:aspect-square relative">
       {#each images as image, i}
-        {#if activeImage === i}
-          <enhanced:img
-            transition:fly
-            src={image}
-            alt="Me"
-            class="mx-auto rotate-3 md:rotate-6 rounded-md w-4/5 md:w-full"
-          />
+        {#if i === activeImage}
+          <div transition:fade={{ duration: 1000 }}>
+            <enhanced:img
+              src={image}
+              alt="Me"
+              class="mx-auto rounded-md w-2/3 md:w-4/5 lg:w-full md:w-full absolute left-1/2 top-1/2"
+              style="transform: translate(-50%, -50%) rotate({randomRotation()}deg);"
+            />
+          </div>
         {/if}
       {/each}
     </div>
@@ -47,7 +53,7 @@
       <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 mb-12">
         <enhanced:img src={logo} alt="Me" class="w-36 md:w-24 lg:w-36" />
 
-        <h1 class="font-bold text-5xl md:text-5xl lg:text-7xl tracking-wider">
+        <h1 class="font-bold text-5xl md:text-5xl lg:text-6xl xl:text-7xl tracking-wider">
           hugh brace
         </h1>
       </div>
@@ -87,7 +93,17 @@
     </div>
 
     <p class="mb-12">
-      If you think I can help, please get in touch at <a href="mailto:yo@hughisthisguy.dev" class="underline text-blue hover:text-dark-blue transition-colors">yo@hughisthisguy.dev</a>
+      If you'd like to work togeter, give me a shout at <a href="mailto:yo@hughisthisguy.dev" class="underline text-blue hover:text-dark-blue transition-colors">hughbrace@gmail.com</a>
     </p>
+
+    <p class="text-2xl mb-4">This website is a work in progess. My todos are:</p>
+
+    <ul class="list-disc pl-6">
+      <li>add some proper fonts</li>
+      <li>add my projects and referals</li>
+      <li>setup a domain and email</li>
+      <li>add some funky three.js image transitions</li>
+      <li>add a map showing where I am and where I've been</li>
+    </ul>
   </div>
 </div>

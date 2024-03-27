@@ -1,6 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
+  safelist: [
+    "-rotate-6",
+    "-rotate-5",
+    "-rotate-4",
+    "-rotate-3",
+    "-rotate-2",
+    "-rotate-1",
+    "rotate-1",
+    "rotate-2",
+    "rotate-3",
+    "rotate-4",
+    "rotate-5",
+    "rotate-6",
+  ],
   theme: {
     container: {
       center: true,
