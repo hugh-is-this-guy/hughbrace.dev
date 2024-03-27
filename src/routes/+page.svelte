@@ -1,6 +1,5 @@
 <script>
-  import { fade, blur, fly, slide, scale } from "svelte/transition";
-  import { quintOut } from "svelte/easing";
+  import { fade } from "svelte/transition";
 
   import logo from "$lib/assets/images/logo.png?enhanced"
 
@@ -96,18 +95,18 @@
     </div>
 
     <div class="w-full col-span-2 pt-8 md:pt-0 md:order-1">
-      <div class="flex flex-row justify-center md:justify-start items-center gap-6 md:gap-8 mb-8">
-        <enhanced:img src={logo} alt="Me" class="w-24 lg:w-36" />
+      <div class="flex flex-row justify-start items-end gap-2 md:gap-4 mb-8">
+        <enhanced:img src={logo} alt="Me" class="w-20 sm:w-28 md:w-32" />
 
-        <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-wider">
+        <h1 class="font-medium sm:font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-wide">
           hugh brace
         </h1>
       </div>
 
-      <h2 class="font-bold italic text-xl md:text-3xl tracking-wider mb-12 !leading-[3rem] text-left">
-        <span class="text-4xl bg-gradient-to-br from-dark-red to-red text-transparent bg-clip-text">F</span>reelance,
-        <span class="text-4xl bg-gradient-to-br from-dark-blue to-blue text-transparent bg-clip-text">F</span>ullstack,
-        <br><span class="text-3xl md:text-4xl bg-gradient-to-br from-dark-yellow to-yellow text-transparent bg-clip-text">W</span>orld-<span class="text-3xl md:text-4xl bg-gradient-to-br from-dark-yellow to-yellow text-transparent bg-clip-text">W</span>ide-<span class="text-3xl md:text-4xl bg-gradient-to-br from-dark-yellow to-yellow text-transparent bg-clip-text">W</span>eb Developer
+      <h2 class="font-medium italic text-xl md:text-3xl tracking-wide mb-12 !leading-[3rem] text-left">
+        <span class="font-bold text-4xl bg-gradient-to-br from-dark-red to-red text-transparent bg-clip-text">F</span>reelance,
+        <span class="font-bold text-4xl bg-gradient-to-br from-dark-blue to-blue text-transparent bg-clip-text">F</span>ullstack,
+        <br><span class="font-bold text-3xl md:text-4xl bg-gradient-to-br from-dark-yellow to-yellow text-transparent bg-clip-text">W</span>orld-<span class="font-bold text-3xl md:text-4xl bg-gradient-to-br from-dark-yellow to-yellow text-transparent bg-clip-text">W</span>ide-<span class="font-bold text-3xl md:text-4xl bg-gradient-to-br from-dark-yellow to-yellow text-transparent bg-clip-text">W</span>eb Developer
       </h2>
     </div>
   </div>
