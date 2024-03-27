@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -42,7 +44,10 @@ export default {
 
         green: "#34E0AD",
         "dark-green": "#0151A1",
-      }
+      },
+      fontFamily: {
+        'sans': ['Nunito Sans', defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [],
