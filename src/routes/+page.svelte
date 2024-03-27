@@ -100,7 +100,7 @@
 
     <ul class="list-disc pl-6">
       <li>add some proper fonts</li>
-      <li>add my projects and referals</li>
+      <li>add my project  demos and referals</li>
       <li>setup a domain and email</li>
       <li>add some funky three.js image transitions</li>
       <li>add a map showing where I am and where I've been</li>
