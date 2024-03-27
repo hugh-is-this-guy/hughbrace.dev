@@ -112,7 +112,7 @@
     </div>
   </div>
 
-  <div>
+  <div class="text-lg">
     <p class="mb-4">
       I build websites and web apps for clients all over the world. I specialise in:
     </p>
