@@ -11,6 +11,13 @@
   import image5 from "$lib/assets/images/me/5.jpg?enhanced"
   import image6 from "$lib/assets/images/me/6.jpg?enhanced"
 
+  import image1sm from "$lib/assets/images/me/1-sm.jpg?enhanced"
+  import image2sm from "$lib/assets/images/me/2-sm.jpg?enhanced"
+  import image3sm from "$lib/assets/images/me/3-sm.jpg?enhanced"
+  import image4sm from "$lib/assets/images/me/4-sm.jpg?enhanced"
+  import image5sm from "$lib/assets/images/me/5-sm.jpg?enhanced"
+  import image6sm from "$lib/assets/images/me/6-sm.jpg?enhanced"
+
   const images = [
     image1,
     image2,
@@ -18,6 +25,15 @@
     image4,
     image5,
     image6,
+  ]
+
+  const imagesSm = [
+    image1sm,
+    image2sm,
+    image3sm,
+    image4sm,
+    image5sm,
+    image6sm,
   ]
 
   let activeImage = 1;
@@ -41,7 +57,14 @@
             <enhanced:img
               src={image}
               alt="Me"
-              class="mx-auto rounded-md w-2/3 md:w-4/5 lg:w-full md:w-full absolute left-1/2 top-1/2"
+              class="mx-auto rounded-md w-2/3 md:w-4/5 lg:w-full md:w-full absolute left-1/2 top-1/2 hidden sm:block"
+              style="transform: translate(-50%, -50%) rotate({randomRotation()}deg);"
+            />
+
+            <enhanced:img
+              src={imagesSm[i]}
+              alt="Me"
+              class="mx-auto rounded-md w-2/3 md:w-4/5 lg:w-full md:w-full absolute left-1/2 top-1/2 sm:hidden"
               style="transform: translate(-50%, -50%) rotate({randomRotation()}deg);"
             />
           </div>
