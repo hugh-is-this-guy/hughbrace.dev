@@ -1,19 +1,46 @@
 <script>
-  import image1 from "$lib/assets/images/me/1.png?enhanced"
-  import image2 from "$lib/assets/images/me/2.png?enhanced"
-  import image3 from "$lib/assets/images/me/3.png?enhanced"
-  import image4 from "$lib/assets/images/me/4.png?enhanced"
-  import image5 from "$lib/assets/images/me/5.png?enhanced"
-  import image6 from "$lib/assets/images/me/6.png?enhanced"
+  import { fade, blur, fly, slide, scale } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
 
   import logo from "$lib/assets/images/logo.png?enhanced"
+
+  import image1 from "$lib/assets/images/me/1.jpg?enhanced"
+  import image2 from "$lib/assets/images/me/2.jpg?enhanced"
+  import image3 from "$lib/assets/images/me/3.jpg?enhanced"
+  import image4 from "$lib/assets/images/me/4.jpg?enhanced"
+  import image5 from "$lib/assets/images/me/5.jpg?enhanced"
+  import image6 from "$lib/assets/images/me/6.jpg?enhanced"
+
+  const images = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+  ]
+
+  let activeImage = 1;
+
+  setInterval(() => {
+    activeImage = (activeImage + 1) % images.length;
+  }, 3000);
 
 </script>
 
 <div class="container">
   <div class="flex flex-col md:grid md:grid-cols-3 items-center justify-center gap-8 md:gap-12 pt-12 md:mb-12">
     <div class="flex flex-col items-center md:order-2">
-      <enhanced:img src={image6} alt="Me" class="mx-auto rotate-3 md:rotate-6 rounded-md w-4/5 md:w-full" />
+      {#each images as image, i}
+        {#if activeImage === i}
+          <enhanced:img
+            transition:fly
+            src={image}
+            alt="Me"
+            class="mx-auto rotate-3 md:rotate-6 rounded-md w-4/5 md:w-full"
+          />
+        {/if}
+      {/each}
     </div>
 
     <div class="w-full col-span-2 pt-8 md:pt-0 md:order-1">
