@@ -96,7 +96,7 @@
       If you'd like to work togeter, give me a shout at <a href="mailto:yo@hughisthisguy.dev" class="underline text-blue hover:text-dark-blue transition-colors">hughbrace@gmail.com</a>
     </p>
 
-    <p class="text-2xl mb-4">This website is a work in progess. My todos are:</p>
+    <p class="text-2xl mb-4">This website is a work in progess. Todo:</p>
 
     <ul class="list-disc pl-6">
       <li>add some proper fonts</li>
