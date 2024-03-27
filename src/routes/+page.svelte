@@ -24,7 +24,7 @@
 
   setInterval(() => {
     activeImage = (activeImage + 1) % images.length;
-  }, 3000);
+  }, 5000);
 
   function randomRotation() {
     return Math.floor(Math.random() * 24) - 12;
@@ -50,10 +50,10 @@
     </div>
 
     <div class="w-full col-span-2 pt-8 md:pt-0 md:order-1">
-      <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 mb-12">
-        <enhanced:img src={logo} alt="Me" class="w-36 md:w-24 lg:w-36" />
+      <div class="flex flex-row justify-center md:justify-start items-center gap-6 md:gap-8 mb-8">
+        <enhanced:img src={logo} alt="Me" class="w-24 lg:w-36" />
 
-        <h1 class="font-bold text-5xl md:text-5xl lg:text-6xl xl:text-7xl tracking-wider">
+        <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-wider">
           hugh brace
         </h1>
       </div>
