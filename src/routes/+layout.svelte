@@ -8,6 +8,7 @@
 
   const headerLinks = [
     { name: "projects", path: "/projects" },
+    { name: "reviews", path: "/reviews" },
   ]
 
   $: currentPage = $page.route.id
@@ -28,13 +29,13 @@
 
 
 <header class="py-4 container">
-  <nav class="flex flex-row items-end gap-8 justify-between">
+  <nav class="flex flex-row items-end justify-between">
 
     <a href="/" class="relative">
       <enhanced:img src={logo} alt="Me" class="w-24 md:w-32" />
     </a>
 
-    <div class="flex flex-row gap-8">
+    <div class="flex flex-row gap-3 md:gap-8">
       {#each headerLinks as link}
         <a
           href={link.path}
