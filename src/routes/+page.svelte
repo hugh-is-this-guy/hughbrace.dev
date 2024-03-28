@@ -1,8 +1,6 @@
 <script>
   import { fade } from "svelte/transition";
 
-  import logo from "$lib/assets/images/logo.png?enhanced"
-
   import image1 from "$lib/assets/images/me/1.jpg?enhanced"
   import image2 from "$lib/assets/images/me/2.jpg?enhanced"
   import image3 from "$lib/assets/images/me/3.jpg?enhanced"
@@ -135,16 +133,6 @@
   </div>
 
   <p class="mb-12">
-    If you'd like to work togeter, give me a shout at <a href="mailto:yo@hughisthisguy.dev" class="underline text-blue hover:text-dark-blue transition-colors">hughbrace@gmail.com</a>
+    If you'd like to work togeter, give me a shout at <a href="mailto:hughbrace@gmail.com" class="underline text-blue hover:text-dark-red transition-colors">hughbrace@gmail.com</a>, otherwise check out my <a href="/projects" class="underline text-blue hover:text-dark-red transition-colors">projects</a>.
   </p>
-
-  <p class="text-2xl mb-4">This website is a work in progess. Todo:</p>
-
-  <ul class="list-disc pl-6">
-    <li>add some proper fonts</li>
-    <li>add my project  demos and referals</li>
-    <li>setup a domain and email</li>
-    <li>add some funky three.js image transitions</li>
-    <li>add a map showing where I am and where I've been</li>
-  </ul>
 </div>

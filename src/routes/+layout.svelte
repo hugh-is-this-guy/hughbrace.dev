@@ -8,7 +8,6 @@
 
   const headerLinks = [
     { name: "projects", path: "/projects" },
-    { name: "contact", path: "/contact" },
   ]
 
   $: currentPage = $page.route.id
@@ -39,10 +38,8 @@
       {#each headerLinks as link}
         <a
           href={link.path}
-          class="text-xl font-medium text-dark-red hover:text-white transition relative"
-          class:active={currentPage === link.path}
-          class:text-white={currentPage === link.path}
-          class:text-dark-red={currentPage !== link.path}
+          class="text-xl font-medium text-white hover:text-red transition relative"
+          class:active={currentPage.startsWith(link.path)}
         >
           {link.name}
         </a>
