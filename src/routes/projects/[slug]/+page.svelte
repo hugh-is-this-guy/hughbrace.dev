@@ -45,7 +45,15 @@
 <div class="grid md:grid-cols-2 gap-8 py-12">
   <div class="py-12">
     <h1 class="font-bold text-3xl mb-8">{meta.title}</h1>
-    <p class="">{meta.description}</p>
+    <p class="mb-6">{meta.description}</p>
+
+    <p>
+      Available at <a class="text-blue hover:text-dark-red underline" href={meta.link} target="_blank">{meta.link_text}</a>
+    </p>
+
+    {#if meta.requires_subscription}
+      <p class="italic"> (requires subscription)</p>
+    {/if}
   </div>
 
   <div class="relative overflow-hidden -mx-4">
@@ -123,5 +131,3 @@
     {/if}
   </div>
 </div>
-
-<svelte:component this={data.content} />
