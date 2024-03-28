@@ -1,6 +1,6 @@
 ---
 title: Goose Freelancer
-description: A homepage, CMS, and blog platform.
+description: A homepage, CMS, and text and audio content platform.
 date: '2024-03-14'
 order: 1
 link: https://www.goosefreelancer.com

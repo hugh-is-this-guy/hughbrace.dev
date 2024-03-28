@@ -45,15 +45,30 @@
 <div class="grid md:grid-cols-2 gap-8 py-12">
   <div class="py-12">
     <h1 class="font-bold text-3xl mb-8">{meta.title}</h1>
+
     <p class="mb-6">{meta.description}</p>
 
-    <p>
-      Available at <a class="text-blue hover:text-dark-red underline" href={meta.link} target="_blank">{meta.link_text}</a>
+    <p class="mb-6">
+      Available at
+      <a class="text-blue hover:text-dark-red underline" href={meta.link} target="_blank">{meta.link_text}</a>
+      {#if meta.requires_subscription}
+        <span class="italic">(requires subscription)</span>
+      {/if}
     </p>
 
-    {#if meta.requires_subscription}
-      <p class="italic"> (requires subscription)</p>
-    {/if}
+
+    <p class="font-medium">Tech stack</p>
+
+    <ul class="flex flex-col gap-1">
+      {#each meta.stack as tech}
+        <li class="flex flex-row gap-2">
+          <span class="shrink-0 w-2 h-2 bg-dark-red rounded-full animate-pulse block mt-2" />
+          <span class="grow">
+            {tech}
+          </span>
+        </li>
+      {/each}
+    </ul>
   </div>
 
   <div class="relative overflow-hidden -mx-4">
@@ -63,10 +78,13 @@
         class="
           hidden
           md:block
+          rounded
           absolute
           top-1/2
           left-6
-          text-2xl
+          text-xl
+          hover:text-2xl
+          transition
           text-white
           bg-black
           w-8
@@ -113,10 +131,13 @@
         class="
           hidden
           md:block
+          rounded
           absolute
           top-1/2
           right-6
-          text-2xl
+          text-xl
+          hover:text-2xl
+          transition
           text-white
           bg-black
           w-8

@@ -4,7 +4,7 @@ description: An AI powered web application for automatically summarising podcast
 date: '2024-03-01'
 order: 6
 link: https://www.blinkist-aisummary.com/
-link: blinkist-aisummary.com
+link_text: blinkist-aisummary.com
 stack:
   - Next.js Frontend
   - Python Flask API
