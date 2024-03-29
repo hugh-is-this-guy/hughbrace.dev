@@ -23,8 +23,13 @@
 </script>
 
 <svelte:head>
-  <title>hugh brace</title>
-  <meta name="description" content="hugh brace - a fullstack, freelance, world-wide-web developer building super fast apps super fast" />
+  <title>hugh brace | freelance web developer</title>
+  <meta name="description" content="hugh brace - a fullstack, freelance, world-wide-web developer, for all your internet needs" />
+  <meta property="og:title" content="hugh brace | freelance web developer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://hughisthisguy.dev/hughisthisguy.png" />
+  <meta property="og:url" content="https://hughisthisguy.dev/" />
+  <meta property="og:description" content="hugh brace - a fullstack, freelance, world-wide-web developer, for all your internet needs" />
 </svelte:head>
 
 
