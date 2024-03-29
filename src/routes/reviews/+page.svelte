@@ -38,7 +38,11 @@
         <div class="col-span-4">
           <h2 class="text-3xl font-bold mb-1">{review.name}</h2>
           <h3 class="text-xl mb-8">{review.role} - <span class="text-base italic">{review.organisation}</span></h3>
-          <p class="">{review.review}</p>
+          <p class="text-lg relative p-6 italic">
+            <span class="text-5xl text-dark-red italic absolute top-0 left-0">“</span>
+            {review.review}
+            <span class="text-5xl text-dark-red italic absolute bottom-0 right-0">”</span>
+          </p>
         </div>
       </div>
     {/each}
