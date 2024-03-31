@@ -42,8 +42,8 @@
 
 </script>
 
-<div class="grid md:grid-cols-2 gap-8 py-12">
-  <div class="py-12">
+<div class="grid md:grid-cols-2 gap-8 py-12 items-stretch">
+  <div class="flex flex-col justify-center">
     <h1 class="font-bold text-3xl mb-8">{meta.title}</h1>
 
     <p class="mb-6">{meta.description}</p>
@@ -110,7 +110,7 @@
         gap-4
         items-center
         overflow-auto
-        px-4
+        p-4
         snap-x
         snap-mandatory
         scroll-px-4
@@ -119,7 +119,7 @@
       bind:this={scroller}
     >
       {#each pictures[slug] as picture}
-        <div class="w-64 md:w-full shrink-0 snap-start">
+        <div class="w-64 md:w-full shrink-0 snap-start border-8 border-dark-red">
           <enhanced:img src={picture} alt={meta.title} />
         </div>
       {/each}
