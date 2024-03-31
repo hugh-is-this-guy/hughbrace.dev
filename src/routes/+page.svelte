@@ -40,7 +40,7 @@
   }, 5000);
 
   function randomRotation() {
-    return Math.floor(Math.random() * 24) - 12;
+    return Math.floor(Math.random() * 16) - 8;
   }
 
 </script>
