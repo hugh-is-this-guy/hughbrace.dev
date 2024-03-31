@@ -52,7 +52,7 @@
 <div class="py-12">
   <h1 class="text-3xl font-bold mb-12">Here's some things I've built</h1>
 
-  <div class="w-full flex flex-col md:grid grid-cols-3 gap-12 md:gap-8 px-4">
+  <div class="w-full flex flex-col sm:grid grid-cols-3 gap-12 sm:gap-8 px-4">
     {#each projects as project, i}
 
       <a href="/projects/{project.slug}" class="flex flex-col items-center justify-between">
