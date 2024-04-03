@@ -133,6 +133,6 @@
   </div>
 
   <p class="mb-12">
-    If you'd like to work togeter, give me a shout at <a href="mailto:hughbrace@gmail.com" class="underline text-blue hover:text-dark-red transition-colors">hughbrace@gmail.com</a>, otherwise check out my <a href="/projects" class="underline text-blue hover:text-dark-red transition-colors">projects</a>.
+    If you'd like to work togeter, give me a shout at <a href="mailto:yo@hughisthisguy.dev" class="underline text-blue hover:text-dark-red transition-colors">yo@hughisthisguy.dev</a>, otherwise check out my <a href="/projects" class="underline text-blue hover:text-dark-red transition-colors">projects</a>.
   </p>
 </div>
