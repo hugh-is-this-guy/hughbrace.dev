@@ -29,16 +29,16 @@
   let interval;
 
   function shakeImage(toShake) {
-    const index = toShake || Math.floor(Math.random() * images.length);
+    const index = typeof toShake === 'number' ? toShake : Math.floor(Math.random() * images.length)
 
     images[index].animate([
       { transform: 'rotate(0deg)' },
-      { transform: 'rotate(4deg)' },
+      { transform: 'rotate(5deg)' },
       { transform: 'rotate(0deg)' },
-      { transform: 'rotate(4deg)' },
+      { transform: 'rotate(5deg)' },
       { transform: 'rotate(0deg)' },
     ], {
-      duration: 500,
+      duration: 700,
       iterations: 1
     });
   }
@@ -55,7 +55,7 @@
   }
 
   onMount(() => {
-    shakeImage(1);
+    shakeImage(0);
 
     interval = setInterval(shakeImage, 10000);
   })
