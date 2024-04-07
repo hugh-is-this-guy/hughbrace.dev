@@ -25,7 +25,6 @@ export default {
         sm: '2rem',
         lg: '12rem',
         xl: '14rem',
-        '2xl': '12rem',
       }
     },
     extend: {

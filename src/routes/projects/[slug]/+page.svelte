@@ -1,7 +1,7 @@
 <script>
   import { page } from '$app/stores';
 
-  const imports = import.meta.glob('../images/*/*.jpg', {
+  const imports = import.meta.glob('../images/*/*.png', {
     eager: true,
     import: 'default',
 		query: {
@@ -12,7 +12,7 @@
   let pictures = {};
 
   for (const [path, image] of Object.entries(imports)) {
-    const regex = /\/images\/(.*?)\/\d+\.jpg/;
+    const regex = /\/images\/(.*?)\/\d+\.png/;
     const match = regex.exec(path);
 
     const slug = match[1]
@@ -42,8 +42,8 @@
 
 </script>
 
-<div class="grid md:grid-cols-2 gap-8 py-12 items-stretch">
-  <div class="flex flex-col justify-center">
+<div class="grid md:grid-cols-2 gap-8 py-12 items-stretch md:-mx-12">
+  <div class="flex flex-col justify-start md:pt-8">
     <h1 class="font-bold text-3xl mb-8">{meta.title}</h1>
 
     <p class="mb-6">{meta.description}</p>
@@ -118,8 +118,8 @@
       "
       bind:this={scroller}
     >
-      {#each pictures[slug] as picture}
-        <div class="w-64 md:w-full shrink-0 snap-start border-8 border-dark-red">
+      {#each pictures[slug] as picture, i}
+        <div class="w-64 md:w-full shrink-0 snap-start bg-gradient-to-br from-green to-dark-green rounded">
           <enhanced:img src={picture} alt={meta.title} />
         </div>
       {/each}
