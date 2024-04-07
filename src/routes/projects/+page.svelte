@@ -72,24 +72,34 @@
   <div class="w-full flex flex-col sm:grid grid-cols-3 gap-12 sm:gap-8 px-4">
     {#each projects as project, i}
 
-      <a href="/projects/{project.slug}" class="flex flex-col items-center justify-between">
+      <a href="/projects/{project.slug}" class="flex flex-col items-center justify-between group">
+        <h2 class="
+          text-xl
+          font-medium
+          text-center
+          mb-4
+          transition
+          bg-white
+          text-white
+          bg-gradient-to-br group-hover:text-transparent bg-clip-text
+          {bgColours(i)}
+        ">
+          { project.title }
+        </h2>
+
         <enhanced:img
           bind:this={images[i]}
           src={pictures[project.slug]}
           alt={project.title}
           class="
             transition
-            hover:rotate-3
+            group-hover:rotate-3
             mb-4
             rounded
             bg-gradient-to-br
             {bgColours(i)}
           "
         />
-
-        <h2 class="text-xl text-center">
-          { project.title }
-        </h2>
       </a>
 
     {/each}
