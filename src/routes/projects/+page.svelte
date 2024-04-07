@@ -55,7 +55,7 @@
   }
 
   onMount(() => {
-    shakeImage(0);
+    shakeImage(1);
 
     interval = setInterval(shakeImage, 10000);
   })
