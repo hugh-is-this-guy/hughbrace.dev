@@ -54,6 +54,17 @@
     return bgClasses[i % bgClasses.length];
   }
 
+  const textClasses = [
+    'from-yellow to-dark-yellow border-dark-yellow',
+    'from-green to-dark-green border-dark-green',
+    'from-red to-dark-red border-dark-red',
+    'from-blue to-dark-blue border-dark-blue',
+  ]
+
+  const textColours = (i) => {
+    return textClasses[i % textClasses.length];
+  }
+
   onMount(() => {
     shakeImage(0);
 
@@ -69,20 +80,24 @@
 <div class="py-12 md:-mx-16">
   <h1 class="text-3xl font-bold mb-12">Here's some things I've built</h1>
 
-  <div class="w-full flex flex-col sm:grid grid-cols-3 gap-12 sm:gap-8 px-4">
+  <div class="w-full flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-12 sm:gap-8 px-4">
     {#each projects as project, i}
 
       <a href="/projects/{project.slug}" class="flex flex-col items-center justify-between group">
         <h2 class="
           text-xl
-          font-medium
+          font-bold
+          md:font-medium
+          border-b-2
           text-center
           mb-4
           transition
           bg-white
-          text-white
+          text-transparent
+          md:text-white
           bg-gradient-to-br group-hover:text-transparent bg-clip-text
-          {bgColours(i)}
+          from-40% to-90%
+          {textColours(i)}
         ">
           { project.title }
         </h2>
