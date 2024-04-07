@@ -94,7 +94,7 @@
           transition
           bg-white
           text-transparent
-          md:text-white
+          text-white
           bg-gradient-to-br group-hover:text-transparent bg-clip-text
           from-40% to-90%
           {textColours(i)}
