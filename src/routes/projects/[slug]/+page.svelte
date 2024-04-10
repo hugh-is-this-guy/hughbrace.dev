@@ -42,8 +42,8 @@
 
 </script>
 
-<div class="grid md:grid-cols-2 gap-8 py-12 items-stretch md:-mx-12">
-  <div class="flex flex-col justify-start md:pt-8">
+<div class="grid md:grid-cols-5 gap-8 py-12 items-stretch md:-mx-12">
+  <div class="flex flex-col justify-start md:pt-8 md:col-span-2">
     <h1 class="font-bold text-3xl mb-8">{meta.title}</h1>
 
     <p class="mb-6">{meta.description}</p>
@@ -71,7 +71,7 @@
     </ul>
   </div>
 
-  <div class="relative overflow-hidden -mx-4">
+  <div class="relative overflow-hidden -mx-4 md:col-span-3">
     {#if pictures[slug].length > 1}
       <button
         on:click={scrollLeft}
