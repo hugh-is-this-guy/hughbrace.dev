@@ -1,6 +1,6 @@
 ---
 title: Blinkist's AI Chatbot
-description: A chatbot for AI powered content discovery and recommendations. Previuosly known as Dewey
+description: An AI powered content discovery and recommendation chatbot for blinkist's content library.
 date: '2023-04-01'
 order: 3
 link: https://www.blinkist.com/en/app/chat

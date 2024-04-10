@@ -1,6 +1,6 @@
 ---
 title: Scarlett Panda
-description: An AI powered web app for children's bedtime stories and educational tools
+description: An AI powered web app for custom written children's bedtime stories, and other educational tools
 date: '2023-03-01'
 order: 4
 link: https://app.scarlettpanda.com/library

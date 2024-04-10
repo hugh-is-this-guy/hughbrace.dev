@@ -1,6 +1,6 @@
 ---
 title: Goose Freelancer
-description: A really beautiful multimedia blog platform, supporting text and audio articles, and a gorgeous homepage to go along with it. Also includes an awesome CMS
+description: A multimedia blog platform, supporting text and audio articles, and a gorgeous homepage to go along with it. Also includes an awesome CMS
 date: '2024-03-14'
 order: 1
 link: https://www.goosefreelancer.com
