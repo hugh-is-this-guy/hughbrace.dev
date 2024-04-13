@@ -113,13 +113,13 @@
         p-4
         snap-x
         snap-mandatory
-        scroll-px-4
+        scroll-px-12
         z-40
       "
       bind:this={scroller}
     >
       {#each pictures[slug] as picture, i}
-        <div class="w-64 md:w-full shrink-0 snap-start bg-gradient-to-br from-green to-dark-green rounded">
+        <div class="w-80 md:w-full shrink-0 snap-center bg-gradient-to-br from-green to-dark-green rounded">
           <enhanced:img src={picture} alt={meta.title} />
         </div>
       {/each}
