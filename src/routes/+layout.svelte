@@ -51,7 +51,7 @@
         <a
           href={link.path}
           class="text-xl font-medium text-white hover:text-red transition relative"
-          class:active={currentPage.startsWith(link.path)}
+          class:active={currentPage?.startsWith(link.path)}
         >
           {link.name}
         </a>
