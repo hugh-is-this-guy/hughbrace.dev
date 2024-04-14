@@ -34,6 +34,8 @@
   <meta name="twitter:title" content="hugh brace | freelance web developer" />
   <meta name="twitter:description" content="hugh brace - a fullstack, freelance, world-wide-web developer, for all your internet needs" />
   <meta name="twitter:image" content="https://hughisthisguy.dev/hughisthisguy.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
 </svelte:head>
 
 
