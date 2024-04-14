@@ -39,8 +39,8 @@
     activeImage = (activeImage + 1) % images.length;
   }, 5000);
 
-  function randomRotation() {
-    return Math.floor(Math.random() * 16) - 8;
+  function rotation(i) {
+    return [-5, 3, -2, 4, -8, 5][i]
   }
 
 </script>
@@ -66,7 +66,7 @@
               left-1/2
               top-1/2
               "
-            style="transform: translate(-50%, -50%) rotate({randomRotation()}deg);"
+            style="transform: translate(-50%, -50%) rotate({rotation(i)}deg);"
           />
 
           <enhanced:img
@@ -84,7 +84,7 @@
               left-1/2
               top-1/2
               "
-            style="transform: translate(-50%, -50%) rotate({randomRotation()}deg);"
+            style="transform: translate(-50%, -50%) rotate({rotation(i)}deg);"
           />
         </div>
       {/if}
