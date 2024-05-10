@@ -3,7 +3,6 @@
   import Intro from "./Intro.svelte"
   import Projects from "./Projects.svelte"
   import Reviews from "./Reviews.svelte"
-  import Footer from "./Footer.svelte"
 
   export let data
 
