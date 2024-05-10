@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit'
 
-async function getProjects() {
+async function getProjects(count) {
   let projects = []
 
 	const paths = import.meta.glob('../../projects/documents/*.md', { eager: true })
@@ -17,13 +17,20 @@ async function getProjects() {
 		}
 	}
 
-	projects = projects.sort((first, second) => first.order - second.order)
+	projects = projects
+    .sort((first, second) => first.order - second.order)
+
+  if (count) {
+    projects = projects.slice(0, count)
+  }
 
 	return projects
 }
 
-export async function GET() {
-	const projects = await getProjects()
+export async function GET({ url }) {
+  const count = url.searchParams.get('count')
+
+	const projects = await getProjects(count)
 
 	return json(projects)
 }

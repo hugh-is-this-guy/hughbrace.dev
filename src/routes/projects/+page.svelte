@@ -77,46 +77,48 @@
 
 </script>
 
-<div class="py-12 md:-mx-16">
-  <h1 class="text-3xl font-bold mb-12">Here's some things I've built</h1>
+<div class="container">
+  <div class="py-12 md:-mx-16">
+    <h1 class="text-3xl font-bold mb-12">Here's some things I've built</h1>
 
-  <div class="w-full flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-12 sm:gap-8 px-4">
-    {#each projects as project, i}
+    <div class="w-full flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-12 sm:gap-8 px-4">
+      {#each projects as project, i}
 
-      <a href="/projects/{project.slug}" class="flex flex-col items-center justify-between group">
-        <h2 class="
-          text-xl
-          font-bold
-          md:font-medium
-          border-b-2
-          text-center
-          mb-4
-          transition
-          bg-white
-          text-transparent
-          text-white
-          bg-gradient-to-br group-hover:text-transparent bg-clip-text
-          from-40% to-90%
-          {textColours(i)}
-        ">
-          { project.title }
-        </h2>
-
-        <enhanced:img
-          bind:this={images[i]}
-          src={pictures[project.slug]}
-          alt={project.title}
-          class="
-            transition
-            group-hover:rotate-3
+        <a href="/projects/{project.slug}" class="flex flex-col items-center justify-between group">
+          <h2 class="
+            text-xl
+            font-bold
+            md:font-medium
+            border-b-2
+            text-center
             mb-4
-            rounded
-            bg-gradient-to-br
-            {bgColours(i)}
-          "
-        />
-      </a>
+            transition
+            bg-white
+            text-transparent
+            text-white
+            bg-gradient-to-br group-hover:text-transparent bg-clip-text
+            from-40% to-90%
+            {textColours(i)}
+          ">
+            { project.title }
+          </h2>
 
-    {/each}
+          <enhanced:img
+            bind:this={images[i]}
+            src={pictures[project.slug]}
+            alt={project.title}
+            class="
+              transition
+              group-hover:rotate-3
+              mb-4
+              rounded
+              bg-gradient-to-br
+              {bgColours(i)}
+            "
+          />
+        </a>
+
+      {/each}
+    </div>
   </div>
 </div>

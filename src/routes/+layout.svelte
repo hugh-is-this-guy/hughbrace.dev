@@ -61,7 +61,7 @@
 
 </header>
 
-<main class="container pb-12">
+<main class="pb-12">
   <slot />
 </main>
 

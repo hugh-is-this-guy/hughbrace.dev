@@ -32,14 +32,14 @@ export default {
         black: "#010C1B",
         white: "#FFFFFF",
 
-        red: "#FD0944",
-        "dark-red": "#B30760",
-
-        blue: "#00A5FF",
-        "dark-blue": "#003880",
+        red: "#F10A4A",
+        "dark-red": "#6A052C",
 
         yellow: "#FCD148",
         "dark-yellow": "#FF2d05",
+
+        blue: "#00A5FF",
+        "dark-blue": "#003880",
 
         green: "#34E0AD",
         "dark-green": "#0151A1",
