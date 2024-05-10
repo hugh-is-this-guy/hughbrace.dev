@@ -1,6 +1,6 @@
 <script>
   import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome'
-  import { faArrowRotateLeft, faBolt, faGears } from '@fortawesome/free-solid-svg-icons'
+  import { faArrowRotateLeft, faBolt, faMicrochip } from '@fortawesome/free-solid-svg-icons'
   import { config } from '@fortawesome/fontawesome-svg-core'
 
   import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -24,7 +24,7 @@
     </h2>
 
     <div class="flex flex-col gap-8 md:gap-12 items-start max-w-xl mx-auto">
-      <div class="flex flex-row items-center">
+      <div class="flex flex-row gap-2 items-center">
         <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
           <FontAwesomeIcon icon={faBolt} class="text-4xl md:text-5xl text-yellow" />
         </div>
@@ -33,7 +33,7 @@
         </p>
       </div>
 
-      <div class="flex flex-row items-center">
+      <div class="flex flex-row gap-2 items-center">
         <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
           <FontAwesomeIcon icon={faArrowRotateLeft} class="text-4xl md:text-5xl text-red" />
         </div>
@@ -42,9 +42,9 @@
         </p>
       </div>
 
-      <div class="flex flex-row items-center">
+      <div class="flex flex-row gap-2 items-center">
         <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
-          <FontAwesomeIcon icon={faGears} class="text-4xl md:text-5xl text-blue" />
+          <FontAwesomeIcon icon={faMicrochip} class="text-4xl md:text-5xl text-green" />
         </div>
         <p class="grow text-xl">
           using modern tech and tools to for lightning fast performance and development speed
