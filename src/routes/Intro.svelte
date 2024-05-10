@@ -25,7 +25,7 @@
 
     <div class="flex flex-col gap-8 md:gap-12 items-start max-w-xl mx-auto">
       <div class="flex flex-row gap-2 items-center">
-        <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
+        <div class="w-16 md:w-24 shrink-0 flex flex-col items-center justify-center">
           <FontAwesomeIcon icon={faBolt} class="text-4xl md:text-5xl text-yellow" />
         </div>
         <p class="grow text-xl">
@@ -34,7 +34,7 @@
       </div>
 
       <div class="flex flex-row gap-2 items-center">
-        <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
+        <div class="w-16 md:w-24 shrink-0 flex flex-col items-center justify-center">
           <FontAwesomeIcon icon={faArrowRotateLeft} class="text-4xl md:text-5xl text-red" />
         </div>
         <p class="grow text-xl">
@@ -43,7 +43,7 @@
       </div>
 
       <div class="flex flex-row gap-2 items-center">
-        <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
+        <div class="w-16 md:w-24 shrink-0 flex flex-col items-center justify-center">
           <FontAwesomeIcon icon={faMicrochip} class="text-4xl md:text-5xl text-green" />
         </div>
         <p class="grow text-xl">
