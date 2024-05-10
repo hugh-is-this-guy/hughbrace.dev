@@ -1,4 +1,4 @@
-<div class="wave bg-white h-20"></div>
+<div class="wave h-20"></div>
 
 <div class="bg-black text-white py-24">
   <div class="container">
@@ -15,26 +15,26 @@
     <div class="flex flex-row gap-3 mb-4">
       <span class="shrink-0 w-3 h-3 bg-dark-red rounded-full animate-pulse block mt-2" />
       <p class="grow">
-        getting things up and running and online as fast as possible
+        getting things online as fast as possible
       </p>
     </div>
 
     <div class="flex flex-row gap-3 mb-4">
       <span class="shrink-0 w-3 h-3 bg-dark-blue rounded-full animate-pulse block mt-2" />
       <p class="grow">
-        working alongside designers and PMs to iterate rapidly on what matters and to quickly work out what doesn't
+        iterating rapidly on what
       </p>
     </div>
 
     <div class="flex flex-row gap-3 mb-8">
       <span class="shrink-0 w-3 h-3 bg-dark-yellow rounded-full animate-pulse block mt-2" />
       <p class="grow">
-        using cutting-edge technologies to maximise development speed and deliver apps that are as perfomant as possible and scale to the moon.
+        using modern technologies to maximise scalability, performance, and development speed
       </p>
     </div>
 
     <p class="">
-      If you'd like to work togeter, give me a shout at <a href="mailto:yo@hughisthisguy.dev" class="underline text-blue hover:text-dark-red transition-colors">yo@hughisthisguy.dev</a>, otherwise check out my <a href="/projects" class="underline text-blue hover:text-dark-red transition-colors">projects</a>.
+      If you'd like to work togeter, email me at <a href="mailto:yo@hughisthisguy.dev" class="underline text-blue hover:text-dark-red transition-colors">yo@hughisthisguy.dev</a>, otherwise check out my <a href="/projects" class="underline text-blue hover:text-dark-red transition-colors">projects</a>.
     </p>
   </div>
 </div>

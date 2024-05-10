@@ -1,7 +1,9 @@
 export async function load({ fetch }) {
-  const response = await fetch('api/projects?count=3', { count: 2 })
+  const projectResponse = await fetch('api/projects?count=3')
+  const projects = await projectResponse.json()
 
-  const projects = await response.json()
+  const reviewsResponse = await fetch('api/reviews?count=5')
+  const reviews = await reviewsResponse.json()
 
-  return { projects }
+  return { projects, reviews }
 }

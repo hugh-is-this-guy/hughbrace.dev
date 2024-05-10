@@ -2,10 +2,12 @@
   import Hero from "./Hero.svelte"
   import Intro from "./Intro.svelte"
   import Projects from "./Projects.svelte"
+  import Reviews from "./Reviews.svelte"
+  import Footer from "./Footer.svelte"
 
   export let data
 
-  $: ({ projects } = data)
+  $: ({ projects, reviews } = data)
 </script>
 
 
@@ -14,3 +16,5 @@
 <Intro />
 
 <Projects {projects} />
+
+<Reviews {reviews} />

@@ -44,17 +44,17 @@
 </script>
 
 
-<div class="wave bg-white h-20"></div>
+<div class="wave-blue h-20"></div>
 
 <div class="bg-black py-24">
-  <div class="container">
-    <h1 class="text-3xl md:text-4xl font-medium mb-12 text-white text-center">Some things I've built</h1>
+  <div class="px-4">
+    <h1 class="text-2xl md:text-3xl font-medium mb-12 text-center">things I've built</h1>
 
-    <div class="w-full flex flex-col md:grid md:grid-cols-3 gap-12 sm:gap-8 px-4 pb-8">
+    <div class="w-full flex flex-col md:grid md:grid-cols-3 gap-12 sm:gap-8 px-4 pb-8 items-center justify-center mx-auto">
 
       {#each projects as project, i}
 
-        <a href="/projects/{project.slug}" class="flex flex-col items-center justify-between group">
+        <a href="/projects/{project.slug}" class="flex flex-col items-center justify-between group max-w-96 mx-auto">
           <h2 class="
             text-lg
             font-medium
@@ -79,7 +79,7 @@
             alt={project.title}
             class="
               transition
-              group-hover:rotate-3
+              group-hover:rotate-2
               mb-4
               rounded
               bg-gradient-to-br
@@ -90,25 +90,8 @@
 
       {/each}
 
-      <a href="/projects" class="col-start-2 w-full text-center bg-gradient-to-tl from-dark-red to-red py-2 px-12 rounded-full text-white hover:text-black transition-colors font-bold text-lg">See more</a>
+      <a href="/projects" class="col-start-2 w-full text-center bg-gradient-to-tl from-dark-red to-red py-2 px-12 rounded-full text-white hover:text-black font-bold text-lg transition hover:rotate-2 max-w-72 mx-auto">See more</a>
     </div>
 
   </div>
 </div>
-
-<style>
-  .wave {
-  --mask:
-    radial-gradient(38.99px at 50% calc(100% + 18px),#0000 calc(99% - 8px),#010C1B calc(101% - 8px) 99%,#0000 101%) calc(50% - 60px) calc(50% - 19px + .5px)/120px 38px ,
-    radial-gradient(38.99px at 50% -18px,#0000 calc(99% - 8px),#010C1B calc(101% - 8px) 99%,#0000 101%) 50% calc(50% + 19px)/120px 38px ;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-          background: linear-gradient(
-            135deg,
-            #003880,
-            #34E0AD,
-            #0151A1,
-            #00A5FF
-          );
-}
-</style>

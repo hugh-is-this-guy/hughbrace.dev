@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit'
 
-async function getReviews() {
+async function getReviews(count) {
   let reviews = []
 
 	const paths = import.meta.glob('../../reviews/documents/*.md', { eager: true })
@@ -17,13 +17,20 @@ async function getReviews() {
 		}
 	}
 
-	reviews = reviews.sort((first, second) => first.order - second.order)
+	reviews = reviews
+    .sort((first, second) => first.order - second.order)
+
+  if (count) {
+    reviews = reviews.slice(0, count)
+  }
 
 	return reviews
 }
 
-export async function GET() {
-	const reviews = await getReviews()
+export async function GET({ url }) {
+  const count = url.searchParams.get('count')
+
+	const reviews = await getReviews(count)
 
 	return json(reviews)
 }

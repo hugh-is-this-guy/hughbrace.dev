@@ -33,13 +33,11 @@
 
     images[index].animate([
       { transform: 'rotate(0deg)' },
-      { transform: 'rotate(5deg)' },
-      { transform: 'rotate(0deg)' },
-      { transform: 'rotate(5deg)' },
+      { transform: 'rotate(1deg)' },
       { transform: 'rotate(0deg)' },
     ], {
-      duration: 700,
-      iterations: 1
+      duration: 250,
+      iterations: 2
     });
   }
 
@@ -79,7 +77,7 @@
 
 <div class="container">
   <div class="py-12 md:-mx-16">
-    <h1 class="text-3xl font-bold mb-12">Here's some things I've built</h1>
+    <h1 class="text-3xl font-bold mb-12">things I've built</h1>
 
     <div class="w-full flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-12 sm:gap-8 px-4">
       {#each projects as project, i}

@@ -1,6 +1,8 @@
 <script>
   import "../app.css";
 
+  import Footer from "./Footer.svelte"
+
   import { onNavigate } from "$app/navigation";
   import { page } from '$app/stores';
 
@@ -61,9 +63,11 @@
 
 </header>
 
-<main class="pb-12">
+<main>
   <slot />
 </main>
+
+<Footer />
 
 <style>
   a.active::after {
