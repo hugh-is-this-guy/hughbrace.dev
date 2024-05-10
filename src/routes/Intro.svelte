@@ -1,3 +1,13 @@
+<script>
+  import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome'
+  import { faArrowRotateLeft, faBolt, faGears } from '@fortawesome/free-solid-svg-icons'
+  import { config } from '@fortawesome/fontawesome-svg-core'
+
+  import '@fortawesome/fontawesome-svg-core/styles.css'
+
+  config.autoAddCss = false
+</script>
+
 <div class="wave h-20"></div>
 
 <div class="bg-black text-white py-24">
@@ -10,34 +20,40 @@
       for clients
       <br class="block md:hidden">
       <span class="font-bold bg-gradient-to-tl from-dark-red to-red text-transparent bg-clip-text">all over the world</span>
+      by:
     </h2>
 
-    <div class="flex flex-row gap-3 mb-4">
-      <span class="shrink-0 w-3 h-3 bg-dark-red rounded-full animate-pulse block mt-2" />
-      <p class="grow">
-        getting things online as fast as possible
-      </p>
-    </div>
+    <div class="flex flex-col gap-8 md:gap-12 items-start max-w-xl mx-auto">
+      <div class="flex flex-row items-center">
+        <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
+          <FontAwesomeIcon icon={faBolt} class="text-4xl md:text-5xl text-yellow" />
+        </div>
+        <p class="grow text-xl">
+          getting things online as soon as possible
+        </p>
+      </div>
 
-    <div class="flex flex-row gap-3 mb-4">
-      <span class="shrink-0 w-3 h-3 bg-dark-blue rounded-full animate-pulse block mt-2" />
-      <p class="grow">
-        iterating rapidly on what
-      </p>
-    </div>
+      <div class="flex flex-row items-center">
+        <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
+          <FontAwesomeIcon icon={faArrowRotateLeft} class="text-4xl md:text-5xl text-red" />
+        </div>
+        <p class="grow text-xl">
+          iterating rapidly with clients on what matters most
+        </p>
+      </div>
 
-    <div class="flex flex-row gap-3 mb-8">
-      <span class="shrink-0 w-3 h-3 bg-dark-yellow rounded-full animate-pulse block mt-2" />
-      <p class="grow">
-        using modern technologies to maximise scalability, performance, and development speed
-      </p>
+      <div class="flex flex-row items-center">
+        <div class="w-16 md:w-32 shrink-0 flex flex-col items-center justify-center">
+          <FontAwesomeIcon icon={faGears} class="text-4xl md:text-5xl text-blue" />
+        </div>
+        <p class="grow text-xl">
+          using modern tech and tools to for lightning fast performance and development speed
+        </p>
+      </div>
     </div>
-
-    <p class="">
-      If you'd like to work togeter, email me at <a href="mailto:yo@hughisthisguy.dev" class="underline text-blue hover:text-dark-red transition-colors">yo@hughisthisguy.dev</a>, otherwise check out my <a href="/projects" class="underline text-blue hover:text-dark-red transition-colors">projects</a>.
-    </p>
   </div>
 </div>
+
 
 <style>
   .wave {
