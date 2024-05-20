@@ -1,5 +1,5 @@
 ---
-title: Blinkist Premium Product
+title: Blinkist Premium Product - 2 weeks per feature
 description: A web app for premium users to discover and enjoy Blinkist's content
 date: '2023-01-01'
 order: 3

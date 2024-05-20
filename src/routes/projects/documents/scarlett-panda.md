@@ -1,5 +1,5 @@
 ---
-title: Scarlett Panda
+title: Scarlett Panda - 2 weeks (frontend app only)
 description: An AI powered web app for custom written children's bedtime stories, and other educational tools
 date: '2023-03-01'
 order: 4

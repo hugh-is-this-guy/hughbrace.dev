@@ -1,5 +1,5 @@
 ---
-title: Flying Pig Lets
+title: Flying Pig Lets - 2 days
 description: A landing page for an homestay / AirBnb
 date: '2022-02-14'
 order: 7

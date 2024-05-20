@@ -1,5 +1,5 @@
 ---
-title: Blinkist's AI Chatbot
+title: Blinkist's AI Chatbot - 2 weeks
 description: An AI powered content discovery and recommendation chatbot for blinkist's content library.
 date: '2023-04-01'
 order: 5

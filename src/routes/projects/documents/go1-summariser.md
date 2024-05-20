@@ -1,5 +1,5 @@
 ---
-title: Go1 AI Summariser
+title: Go1 AI Summariser - 2 weeks
 description: An AI powered web application for automatically summarising podcasts, videos, and web documents
 date: '2024-03-01'
 order: 6
