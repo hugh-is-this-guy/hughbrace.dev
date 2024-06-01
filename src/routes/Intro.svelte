@@ -47,7 +47,7 @@
           <FontAwesomeIcon icon={faMicrochip} class="text-4xl md:text-5xl text-green" />
         </div>
         <p class="grow text-xl">
-          using modern tech and tools to for lightning fast performance and development speed
+          using modern tech and tools for lightning fast performance and development speed
         </p>
       </div>
     </div>
