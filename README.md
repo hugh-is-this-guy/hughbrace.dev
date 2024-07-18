@@ -1,5 +1,8 @@
 # hughisthisguy.dev
 
+![Screenshot of site](https://github.com/user-attachments/assets/2b88ba0b-416a-4f5b-a620-34a2be665ed7)
+
+
 My personal website hosted at hughisthisguy.dev
 
 ## Running
